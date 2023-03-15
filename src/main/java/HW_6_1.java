@@ -57,7 +57,5 @@ public class HW_6_1 {
             }
         }
         System.out.println("количество элементов вложенного массива = " + count);
-
     }
-
 }
