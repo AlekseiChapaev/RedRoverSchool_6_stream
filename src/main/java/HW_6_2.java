@@ -25,17 +25,13 @@ public class HW_6_2 {
         // Задача №3 необходимо вывести индексы начала всех подстрок - “рит”, независимо от регистра.
 
         String s3 = "Посмотрите как Рите нравится ритм";
-
-        int index = 0;
-        for (int i = 0; i < s3.length() - 3; i++) {
-            if(s3.toLowerCase().charAt(i) == 'р' && s3.charAt(i + 1) == 'и' && s3.charAt(i + 2) == 'т'){
-                System.out.println(s3.indexOf('р'));
-
-            }
-
-
-
+        s3 = s3.toLowerCase();
+        int index = s3.indexOf("рит");
+        while(index != -1){
+            System.out.println(index);
+            index = s3.indexOf("рит", index + 1);
         }
+
 
         // Задача №4 необходимо подсчитать количество строк в массиве, которые не содержат буквы “е”.
 
@@ -48,7 +44,7 @@ public class HW_6_2 {
                 }
             }
         }
-        System.out.println(count4);
+        System.out.println("количество строк в массиве, которые не содержат буквы “е” = " + count4);
 
 
     }
