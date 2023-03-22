@@ -7,13 +7,13 @@ public class Cube {
      * a getter GetSide() and a setter SetSide(int num) method for this property.
      */
 
-    int Side;
+    int side;
 
-    public int getSide() {
-        return this.Side;
+    int getSide() {
+        return this.side;
     }
 
-    public void setSide(int Side){
-        this.Side = Side;
+    void setSide(int side){
+        this.side = side;
     }
 }
